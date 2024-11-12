@@ -3,27 +3,14 @@
 <!-- Generated using sounddrill31/actions_generate_local_manifests -->
 
     <!-- Remotes -->
-    <remote name="nathannxx" fetch="https://github.com/nathannxx" clone-depth="1" />
-    <remote name="LineageOS" fetch="https://github.com/LineageOS" clone-depth="1" />
-    <remote name="P-Salik" fetch="https://github.com/P-Salik" clone-depth="1" />
-    <remote name="ArrowOS" fetch="https://github.com/ArrowOS" clone-depth="1" />
-    <remote name="P-SalikAlt" fetch="https://github.com/P-SalikAlt" clone-depth="1" />
-    <remote name="PixelBuilds" fetch="https://gitlab.com/PixelBuilds" clone-depth="1" />
-    <remote name="tejas101k" fetch="https://gitlab.com/tejas101k" clone-depth="1" />
-
-    <!-- Removals -->
-    <remove-project name="RisingTechOSS/android_packages_modules_Bluetooth" />
-    <remove-project name="LineageOS/android_prebuilts_build-tools" />
-    <remove-project name="RisingTechOSS/android_vendor_rising" />
-    <remove-project name="RisingTechOSS/android_frameworks_av" />
-    <remove-project name="minaripenguin/android_vendor_gms" />
-    <remove-project name="LineageOS/android_vendor_qcom_opensource_vibrator" />
-    <remove-project name="platform/system/bpf" />
-
+    <remote name="natan" fetch="https://github.com/imnathanzero" clone-depth="1" />
+    <remote name="salik" fetch="https://github.com/P-Salik" clone-depth="1" />
+    <remote name="arow" fetch="https://github.com/ArrowOS" clone-depth="1" />
+    
     <!-- Repos -->
     <!-- Device -->
-    <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="ArrowOS" revision="arrow-13.0" />
-    <project path="device/realme/RMX1941" name="android_device_realme_RMX1941" remote="nathannxx" revision="ngising" />
+    <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="ArrowOS" revision="arrow-13.1" />
+    <project path="device/realme/RMX1941" name="android_device_realme_RMX1941" remote="natan" revision="arrow-13" />
 
     <!-- Device - Common -->
 
@@ -31,22 +18,11 @@
     <project path="kernel/realme/RMX1941" name="android_kernel_realme_RMX1941" remote="P-Salik" revision="Q-rebase" />
 
     <!-- Vendor -->
-    <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" remote="nathannxx" revision="lineage-20.0" />
-    <project path="vendor/lineage" name="android_vendor_lineage" remote="LineageOS" revision="lineage-20.0" />
-    <project path="vendor/gms" name="android_vendor_gms" remote="PixelBuilds" revision="unity" />
-    <project path="vendor/realme/RMX1941-ims" name="android_vendor_realme_RMX1941-ims" remote="nathannxx" revision="13.0" />
+    <project path="vendor/realme/RMX1941-ims" name="android_vendor_realme_RMX2020-ims" remote="natan" revision="thirteen-rmui1" />
     <project path="vendor/realme/RMX1941" name="android_vendor_realme_RMX1941" remote="P-Salik" revision="tiramsu" />
-    <project path="vendor/RisingOTA" name="00ota" remote="nathannxx" revision="thirteen" />
 
-    <!-- Vendor - Common -->
-
-    <!-- Other Repos -->
-    <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="tejas101k" revision="master" />
-    <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth-lineage" remote="P-SalikAlt" revision="lineage-20.0" />
-    <project path="prebuilts/build-tools" name="android_prebuilts_build-tools" remote="LineageOS" revision="lineage-20.0" />
+    <!-- Toolchains -->
     <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-gnu-7.5" name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-gnu-7.5" remote="P-Salik" revision="master" />
     <project path="prebuilts/clang/host/linux-x86/clang-r353983c" name="android_prebuilts_clang_host_linux-x86_clang-5484270" remote="P-Salik" revision="9.0.3" />
-    <project path="system/bpf" name="platform_system_bpf" remote="P-SalikAlt" revision="android-13.0.0_r35" />
-    <project path="frameworks/av" name="android_frameworks_av-lineage" remote="P-SalikAlt" revision="lineage-20.0" />
-
+    
 </manifest>
